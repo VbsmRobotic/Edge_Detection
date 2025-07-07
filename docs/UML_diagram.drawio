@@ -1,0 +1,34 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36" version="27.2.0">
+  <diagram name="Page-1" id="ZPlJbn_XGoAFBQzxkoVU">
+    <mxGraphModel dx="1426" dy="694" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="cUlZN_NmaOCOLoySPevn-2" value="EdgeDetector&amp;nbsp;&lt;br&gt;&lt;br&gt;-op_ : unique_ptr&lt;br&gt;-opType_: OperatorType&lt;br&gt;&lt;br&gt;+EdgeDetector(opType: OperatorType)&lt;br&gt;+setOperator(opType: OperatorType)&lt;br&gt;+detectEdges(input:cv::Mat):cv::Mat&lt;br&gt;+currentOperatorName():string&lt;br&gt;-createOperator()&lt;br&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="260" y="170" width="320" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="MZXMfKDzeYBe0Sn071B2-1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=3;curved=0;" edge="1" parent="1" source="cUlZN_NmaOCOLoySPevn-3" target="cUlZN_NmaOCOLoySPevn-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cUlZN_NmaOCOLoySPevn-3" value="&amp;lt;&amp;lt;interface&amp;gt;&amp;gt;&lt;br&gt;EdgeOperator&lt;br&gt;&lt;br&gt;+apply(input: cv::Mat) : cv::Mat&lt;br&gt;+ name() : string&lt;br&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="310" y="430" width="220" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="MZXMfKDzeYBe0Sn071B2-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;curved=1;startArrow=none;startFill=0;strokeWidth=3;" edge="1" parent="1" source="MZXMfKDzeYBe0Sn071B2-2" target="cUlZN_NmaOCOLoySPevn-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="MZXMfKDzeYBe0Sn071B2-2" value="PrewittOperator&lt;br&gt;&lt;br&gt;+ apply(input: cv::Mat) : cv::Mat&lt;br&gt;+name() : string&lt;br&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#76608a;fontColor=#ffffff;strokeColor=#432D57;" vertex="1" parent="1">
+          <mxGeometry x="602" y="640" width="170" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="MZXMfKDzeYBe0Sn071B2-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;curved=1;strokeWidth=3;" edge="1" parent="1" source="MZXMfKDzeYBe0Sn071B2-4" target="cUlZN_NmaOCOLoySPevn-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="MZXMfKDzeYBe0Sn071B2-4" value="SobelOperator&lt;br&gt;&lt;br&gt;+ apply(input: cv::Mat) : cv::Mat&lt;br&gt;+name() : string&lt;br&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#76608a;fontColor=#ffffff;strokeColor=#432D57;" vertex="1" parent="1">
+          <mxGeometry x="70" y="640" width="170" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="MZXMfKDzeYBe0Sn071B2-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;curved=1;startArrow=none;startFill=0;strokeColor=none;strokeWidth=2;" edge="1" parent="1" source="MZXMfKDzeYBe0Sn071B2-4" target="cUlZN_NmaOCOLoySPevn-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -28,16 +28,16 @@ make
 
 ## Run the Application
 ```
-./bin/edge_detection_app <input_image> <output_image> <operator: sobel|prewitt>
+./src/edge_detection_app <input_image> <output_image> <operator: sobel|prewitt>
 ```
 Example:
 ```
-./bin/edge_detection_app ../examples/input.png ../examples/output.png sobel
+./src/edge_detection_app ../examples/sample_1.png ../examples/output.png sobel
 ```
 
 ## Run Tests
 ```
-./bin/edge_detection_tests
+./tests/edge_detection_tests
 ```
 
 ## UML Diagram
